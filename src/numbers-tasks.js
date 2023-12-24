@@ -38,44 +38,6 @@ function getCircleCircumference(radius) {
 }
 
 /**
- * Returns an average of two given numbers.
- *
- * @param {number} value1
- * @param {number} value2
- * @return {number}
- *
- * @example:
- *   5, 5  => 5
- *  10, 0  => 5
- *  -3, 3  => 0
- */
-function getAverage(value1, value2) {
-  let result = BigInt(10);
-  return result = (value1 + value2) / 2;
-}
-
-/**
- * Returns a distance between two points by cartesian coordinates.
- *
- * @param {number} x1
- * @param {number} y1
- * @param {number} x2
- * @param {number} y2
- *
- * @return {number}
- *
- * @example:
- *   (0,0) (0,1)    => 1
- *   (0,0) (1,0)    => 1
- *   (-5,0) (10,-10) => 18.027756377319946
- */
-// AB = √(xb - xa)2 + (yb - ya)2
-function getDistanceBetweenPoints(x1, y1, x2, y2) {
-
-  return Math.sqrt( ((x1 - x2) ** 2) + ((y1 - y2) ** 2) );
-}
-
-/**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
  *
  * @param {number} a
@@ -608,8 +570,6 @@ function getCountOfOddNumbers(/* number */) {
 module.exports = {
   getRectangleArea,
   getCircleCircumference,
-  getAverage,
-  getDistanceBetweenPoints,
   getLinearEquationRoot,
   getAngleBetweenVectors,
   getLastDigit,
